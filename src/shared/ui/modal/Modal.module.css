@@ -1,0 +1,27 @@
+.modal {
+  padding: 0;
+}
+
+.modal::backdrop {
+  background: rgb(0 0 0 / 50%);
+}
+
+.content {
+  position: relative;
+  padding: 24px;
+}
+
+.closeButton {
+  display: none;
+  /* Остальные стили крестика */
+}
+
+@media (max-width: 640px) {
+  .content {
+    padding-top: 64px;
+  }
+
+  .closeButton {
+    display: grid;
+  }
+}
