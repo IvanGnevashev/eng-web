@@ -1,0 +1,27 @@
+.button {
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  background: transparent;
+  color: #333;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.button:hover {
+  background: #f3f4f6;
+}
+
+.button[aria-pressed='true'] {
+  background: #e0e7ff;
+  color: blue;
+}
+
+.button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.iconButton {
+  width: 2rem;
+  height: 2rem;
+}

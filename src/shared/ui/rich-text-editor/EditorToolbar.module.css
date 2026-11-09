@@ -1,0 +1,14 @@
+.toolbar {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 2%;
+}
+
+.group {
+  display: flex;
+  padding: 5px;
+  border-left: 1px solid #a7a7a7;
+  border-right: 1px solid #a7a7a7;
+  gap: 5%;
+}

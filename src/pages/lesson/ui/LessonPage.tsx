@@ -8,7 +8,7 @@ export function LessonPage() {
 
     return (
         <>
-            <Link to="/">На главную</Link>
+            <Link to={`/editor/${lessonId}`}>Редактировать урок</Link>
 
             {!lessonId ? (
                     <p>Некорректная ссылка</p>

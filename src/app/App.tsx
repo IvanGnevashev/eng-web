@@ -7,6 +7,7 @@ import { store } from './store/store'
 import { LessonPage } from '../pages/lesson'
 import { SiteHeader } from '../widgets/site-header'
 import { ProfilePage } from '../pages/profile'
+import { EditorPage } from '../pages/editor'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path='/lessons/:lessonId' element={<LessonPage />} />
           <Route path='/profile' element={<ProfilePage />} />
+          <Route path='/editor/:lessonId' element={<EditorPage />} />
         </Routes>
       </main>
     </Provider>
