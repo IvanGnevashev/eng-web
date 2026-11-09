@@ -2,6 +2,9 @@ import { EditorContent, useEditor } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 import { EditorToolbar } from "./EditorToolbar";
 import TextAlign from "@tiptap/extension-text-align";
+import Highlight from "@tiptap/extension-highlight";
+import Image from "@tiptap/extension-image";
+import { ImageUploadNode } from "./ImageUploadNode";
 
 export function RichTextEditor() {
     const editor = useEditor({
@@ -15,6 +18,11 @@ export function RichTextEditor() {
                 types: ['heading', 'paragraph'],
                 defaultAlignment: 'left'
             }),
+            Highlight.configure({
+                multicolor: true
+            }),
+            Image,
+            ImageUploadNode,
         ],
         content: '<p>Текст урока</p>',
     })

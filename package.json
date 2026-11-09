@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.13.0",
+    "@tiptap/extension-highlight": "^3.33.0",
+    "@tiptap/extension-image": "^3.33.0",
     "@tiptap/extension-text-align": "^3.33.0",
     "@tiptap/pm": "^3.33.0",
     "@tiptap/react": "^3.33.0",

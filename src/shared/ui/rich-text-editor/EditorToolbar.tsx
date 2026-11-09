@@ -4,6 +4,7 @@ import { Button } from "../button";
 import styles from "./EditorToolbar.module.css"
 import controls from './EditorControls.module.css'
 import { HeadingDropdown } from "./HeadingDropDown";
+import { HighlightDropdown } from "./HighlightDropdown";
 
 type EditorToolbarProps = {
     editor: Editor,
@@ -82,6 +83,7 @@ export function EditorToolbar({editor}: EditorToolbarProps) {
             >
                 U
             </Button>
+            <HighlightDropdown editor={editor} />
             <div className={styles.group} role="group" aria-label="Списки">
                 <Button
                     type="button"
@@ -140,6 +142,14 @@ export function EditorToolbar({editor}: EditorToolbarProps) {
                     ≡
                 </Button>
             </div>
+            <Button
+                type="button"
+                onClick={() => editor.chain().focus().insertContent({type: 'imageUpload'}).run()}
+                className={`${controls.button} ${controls.iconButton}`}
+                aria-label="Вставить изображение"
+            >
+                Add
+            </Button>
         </div>
         </>
     )
